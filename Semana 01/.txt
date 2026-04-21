@@ -1,0 +1,36 @@
+Semana 01 - S1/S2
+
+Diseño de Diagramas de Clases UML
+    ¿Qué es UML?: Es un lenguaje estándar (Unified Modeling Language) para visualizar, especificar, construir y documentar sistemas de software.
+   
+    Diagrama de Clases: Es una representación gráfica de las clases de un sistema, sus atributos, métodos y las relaciones entre ellas.
+   
+    Componentes de una Clase: Se representa con un rectángulo dividido en tres partes: nombre de la clase, atributos y métodos.
+
+    Relaciones entre Clases:
+
+        Asociación: Relación estructural representada por una línea sólida.
+        Herencia: Una subclase adquiere atributos y métodos de una superclase; se usa una flecha hacia la superclase.
+        Agregación: Relación "todo-parte" donde las partes pueden existir independientemente; se representa con un rombo vacío.
+        Composición: Relación "todo-parte" fuerte; las partes no existen sin el todo; se usa un rombo lleno.
+        Dependencia: Una clase utiliza a otra en algún aspecto; se usa una línea punteada.
+
+Fundamentos de POO en Java
+    
+    Conceptos Clave:
+        Clase: Es una abstracción o "plano" que define cómo construir objetos, especificando su estado (atributos) y comportamiento (métodos).
+        Objeto: Estructura que representa una entidad del mundo real con información de estado y comportamiento.
+        Instanciación: Proceso de crear un objeto a partir de una clase usando la palabra reservada new.
+
+    Atributos y Métodos:
+        Atributos: Variables dentro de una clase que describen sus propiedades. Se usan Getters para obtener valores y Setters para asignarlos.
+        Métodos: Subrutinas que implementan lo que la clase puede hacer.
+            Procedimientos: Métodos que no retornan valor (void).
+            Funciones: Métodos que retornan un valor mediante la instrucción return.
+
+    Interacción y Mensajes:
+
+        Los objetos interactúan mediante mensajes (llamadas a métodos).
+        Parámetros: Variables establecidas por el método para recibir información.
+        Argumentos: Valores reales enviados al método durante la invocación.
+        Paso de parámetros: Los tipos primitivos se copian (alcance limitado), mientras que los objetos se referencian (alcance amplio).
