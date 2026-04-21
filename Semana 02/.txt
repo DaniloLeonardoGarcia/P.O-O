@@ -1,0 +1,31 @@
+Semana 02 - S1/S2
+
+    Encapsulamiento y Modificadores de Acceso
+        Encapsulamiento: Es un mecanismo de la POO que agrupa datos (atributos) y el código que los manipula (métodos) en una sola unidad, protegiéndolos de accesos externos no autorizados.
+
+        Modificadores de Acceso: Definen el nivel de visibilidad de los miembros de una clase:
+
+        Public (+): Los miembros son accesibles desde cualquier clase en cualquier paquete.
+
+        Private (-): Los miembros solo son accesibles dentro de la misma clase donde fueron declarados.
+
+        Protected (#): Los miembros son accesibles por la misma clase, clases del mismo paquete y subclases en otros paquetes.
+
+        Por defecto (Package-private): Si no se especifica, solo es accesible por clases dentro del mismo paquete.
+
+        Implementación: Se suelen declarar los atributos como private y se proporcionan métodos public (getters y setters) para interactuar con ellos de forma segura.
+
+    Constructores y Sobreescritura
+        Constructores: Son métodos especiales que se ejecutan automáticamente al instanciar un objeto.
+
+            Tienen el mismo nombre que la clase y no especifican un tipo de retorno (ni siquiera void).
+            Su propósito principal es inicializar el estado del objeto (sus atributos).
+            Constructor por defecto: Si no se define uno, Java crea automáticamente uno sin parámetros que inicializa variables numéricas en cero y objetos en null.
+
+        Palabra reservada this: Se utiliza dentro de un método o constructor para referirse al objeto actual, permitiendo diferenciar entre atributos de la clase y parámetros con el mismo nombre.
+
+        Sobrecarga de Constructores: Permite tener múltiples constructores en una misma clase, siempre que tengan diferentes listas de parámetros (cantidad o tipo).
+
+        Sobreescritura de Métodos (@Override): Es cuando una subclase proporciona una implementación específica de un método que ya está definido en su superclase.
+
+            Es fundamental para el Polimorfismo, permitiendo que un mismo nombre de método se comporte de forma distinta según el objeto que lo ejecute.
