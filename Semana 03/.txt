@@ -1,0 +1,29 @@
+Semana 03 - S1/S2
+
+    Relaciones de Asociación
+        Definición: Es una relación estructural que describe una conexión entre clases, permitiendo que un objeto realice una acción en nombre de otro o que ambos colaboren.
+
+        Representación UML: Se grafica con una línea sólida que conecta las dos clases.
+
+        Direccionalidad: Las asociaciones pueden ser unidireccionales (una clase conoce a la otra, pero no viceversa) o bidireccionales (ambas clases se conocen entre sí).
+
+        Multiplicidad: Indica cuántos objetos de una clase pueden relacionarse con un objeto de la clase opuesta (ejemplos: 1, 0..*, 1..*).
+
+        Navegabilidad: Se representa con una punta de flecha para indicar la dirección en la que se pueden enviar mensajes entre los objetos.
+
+    Relaciones de Agregación y Composición
+        Ambas representan una relación de tipo "Todo-Parte", pero con diferentes niveles de dependencia:
+
+        Agregación (Relación Débil)
+            Concepto: Indica que una clase es parte de otra, pero puede existir de forma independiente; la vida de la "parte" no está ligada a la vida del "todo".
+
+            Representación UML: Se utiliza una línea sólida con un rombo vacío en el extremo de la clase que representa el "todo".
+
+            Ejemplo: Una Universidad y sus Estudiantes; si la universidad desaparece, los estudiantes siguen existiendo como entidades independientes.
+
+        Composición (Relación Fuerte)
+            Concepto: Es una forma de agregación con una dependencia de vida estricta; las "partes" no tienen sentido sin el "todo" y son creadas o destruidas junto con él.
+
+            Representación UML: Se utiliza una línea sólida con un rombo relleno en el extremo de la clase "todo".
+
+            Ejemplo: Un Coche y su Motor; el motor se considera una parte intrínseca que no existe fuera del contexto del vehículo para el cual fue diseñado.
