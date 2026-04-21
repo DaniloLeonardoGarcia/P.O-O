@@ -1,0 +1,28 @@
+Semana 04 - S1/S2
+
+    Jerarquía de Clases y Herencia
+        Definición de Herencia: Es un mecanismo que permite crear una nueva clase (subclase) basada en una clase existente (superclase).
+
+        Propósito: Su objetivo principal es la reusabilidad del código, permitiendo que la subclase herede atributos y métodos de la superclase.
+
+        Relación "Es un": La herencia representa una relación jerárquica donde la subclase "es un" tipo de la superclase (ejemplo: un Perro es un Animal).
+
+        Sintaxis en Java: Se utiliza la palabra reservada extends para establecer la relación.
+
+        Representación UML: Se grafica con una línea sólida y una flecha hueca que apunta desde la subclase hacia la superclase.
+
+    Trabajo con Subclases y Superclases
+        La palabra reservada super:
+            
+            Se utiliza para invocar al constructor de la superclase desde la subclase.
+            Permite acceder a métodos o atributos de la superclase que han sido ocultados o sobrescritos en la subclase.
+
+        Constructores en la Herencia:
+
+            El constructor de la superclase debe ser invocado (explícita o implícitamente) para inicializar los atributos heredados.
+
+            La llamada a super() debe ser siempre la primera instrucción dentro del constructor de la subclase.
+
+        Jerarquías Multinivel: Una subclase puede servir como superclase para otra clase, creando una cadena de herencia (ejemplo: Animal → Mamífero → Perro).
+
+        Clase Object: En Java, todas las clases heredan automática y finalmente de la clase raíz denominada Object.
