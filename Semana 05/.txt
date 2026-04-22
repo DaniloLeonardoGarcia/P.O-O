@@ -1,0 +1,10 @@
+Semana 05 - S1/S2
+
+    Diseño de diagrama de clases del UML usando herencia simple y herencia múltiple
+
+        Utilidad: La utilidad principal de los diagramas de clases en UML es proporcionar una representación visual de la estructura y 
+        las relaciones de clases en un sistema de software, facilitando la comprensión y la comunicación entre los miembros del equipo de desarrollo.
+
+        Herencia Simple: En UML se representa mediante una línea con una flecha que apunta desde la subclase hacia la superclase.
+        
+        Herencia Múltiple: Se representa de manera similar, pero con varias flechas que apuntan a las superclases.
