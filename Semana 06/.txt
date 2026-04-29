@@ -1,0 +1,59 @@
+========================================================================
+RESUMEN: CLASES ABSTRACTAS EN JAVA - CREACIÓN Y AMPLIACIÓN
+========================================================================
+
+1. DEFINICIÓN DE CLASE ABSTRACTA
+---------------------------------------------------------
+* Es una clase que no se puede instanciar directamente; no se pueden crear objetos de ella[cite: 26, 37].
+* Se utiliza como una plantilla para otras clases que heredarán sus atributos y métodos[cite: 29].
+* Se define utilizando la palabra clave 'abstract'[cite: 30].
+
+2. PROPÓSITO Y UTILIDAD
+---------------------------------------------------------
+* Define una estructura común para un grupo de clases relacionadas[cite: 23, 47].
+* Fuerza a las subclases a implementar métodos específicos[cite: 23].
+* Facilita la escritura de código más limpio, organizado y mantenible[cite: 22, 23].
+
+3. MÉTODOS ABSTRACTOS
+---------------------------------------------------------
+* Se definen con la palabra clave 'abstract'[cite: 34].
+* No tienen cuerpo (implementación) en la clase abstracta[cite: 34].
+* Deben ser implementados obligatoriamente por las subclases concretas[cite: 34, 48].
+* Se diferencian de los métodos regulares en que estos últimos sí tienen una implementación definida[cite: 12].
+
+4. EJEMPLO DE IMPLEMENTACIÓN
+---------------------------------------------------------
+
+
+A) Creación de la clase abstracta (Plantilla):
+   abstract class Figura {
+       String nombre;
+       public Figura(String nombre) { this.nombre = nombre; }
+       abstract double calcularArea(); // Método sin cuerpo
+   } [cite: 34, 36]
+
+B) Ampliación mediante subclase (Implementación):
+   class Circulo extends Figura {
+       double radio;
+       public Circulo(String nombre, double radio) {
+           super(nombre);
+           this.radio = radio;
+       }
+       @Override
+       double calcularArea() {
+           return Math.PI * radio * radio;
+       }
+   } [cite: 41, 43]
+
+C) Uso en el programa:
+   Al ser 'Circulo' una clase concreta, ya permite la creación de objetos y el uso de sus métodos[cite: 44, 45].
+
+5. CONCLUSIONES CLAVE
+---------------------------------------------------------
+* Las clases abstractas son ideales cuando varias clases comparten características pero tienen diferencias específicas en su comportamiento[cite: 20].
+* Una clase abstracta puede tener atributos y métodos normales además de los abstractos[cite: 34].
+* Las subclases concretas DEBEN proporcionar implementaciones para todos los métodos abstractos heredados[cite: 48].
+
+========================================================================
+Fuente: Universidad Tecnológica del Perú (UTP) - Programación Orientada a Objetos[cite: 1, 8].
+========================================================================
