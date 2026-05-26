@@ -1,0 +1,36 @@
+====================================================================
+RESUMEN: BASE DE DATOS - RELACIONES DE UNO A MUCHOS
+====================================================================
+
+INFORMACION GENERAL
+--------------------------------------------------------------------
+- Curso: Base de Datos[cite: 1].
+- Tema: Relaciones de uno a muchos (Semana 09)[cite: 4, 5].
+- Docente: Mg. Ing. Juan Ramirez Ticona[cite: 3].
+- Logro de aprendizaje: Al finalizar la sesion, el estudiante sera capaz de aplicar correctamente las clausulas Cross Join, Inner Join, Left Join y Right Join para gestionar y analizar relaciones de uno a muchos entre tablas en SQL, demostrando comprension de como cada tipo de join afecta el conjunto de resultados[cite: 11].
+
+CONCEPTOS CLAVE: TIPOS DE JOIN
+--------------------------------------------------------------------
+- Cross Join (Producto Cartesiano): Un CROSS JOIN devuelve el producto cartesiano de dos tablas[cite: 27]. Esto significa que combina cada fila de la primera tabla con cada fila de la segunda tabla[cite: 28].
+- Inner Join (Union Interna): Un INNER JOIN devuelve solo las filas que tienen coincidencias en ambas tablas basadas en una condicion de union[cite: 34]. El INNER JOIN es util para obtener solo las coincidencias entre tablas[cite: 24].
+- Left Join (Union Izquierda): Un LEFT JOIN devuelve todas las filas de la tabla de la izquierda y las filas coincidentes de la tabla de la derecha[cite: 41]. Si no hay coincidencia, las columnas de la tabla de la derecha seran NULL[cite: 42]. El LEFT JOIN asegura que todas las filas de la tabla principal esten incluidas independientemente de las coincidencias[cite: 24].
+- Right Join (Union Derecha): Un RIGHT JOIN devuelve todas las filas de la tabla de la derecha y las filas coincidentes de la tabla de la izquierda[cite: 49]. Si no hay coincidencia, las columnas de la tabla de la izquierda seran NULL[cite: 50]. El RIGHT JOIN garantiza que todas las filas de la tabla secundaria aparezcan incluso si no tienen coincidencias en la tabla principal[cite: 24].
+
+EJEMPLOS PRACTICOS EN SQL
+--------------------------------------------------------------------
+- Contexto del ejemplo: Supongamos que tienes dos tablas: Clientes y Pedidos[cite: 57]. Un cliente puede tener muchos pedidos, pero cada pedido pertenece a un solo cliente[cite: 57].
+
+- Codigo Inner Join: 
+  SELECT Clientes.Nombre, Pedidos.FechaPedido 
+  FROM Clientes 
+  INNER JOIN Pedidos ON Clientes.ClienteID = Pedidos.ClienteID; [cite: 61, 62, 63]
+
+- Codigo Left Join: 
+  SELECT Clientes.Nombre, Pedidos.FechaPedido 
+  FROM Clientes 
+  LEFT JOIN Pedidos ON Clientes.ClienteID = Pedidos.ClienteID; [cite: 66, 67, 68]
+
+- Codigo Right Join: 
+  SELECT Clientes.Nombre, Pedidos.FechaPedido 
+  FROM Clientes 
+  RIGHT JOIN Pedidos ON Clientes.ClienteID = Pedidos.ClienteID; [cite: 71, 72, 73]
